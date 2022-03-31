@@ -1,0 +1,59 @@
+<!--根据数据自动生成表，行列皆自动-->
+<div xmlns:th="http://www.w3.org/1999/xhtml" th:fragment="deliver(tableId)">
+    <div>TableID:[[${tableId}]]</div>
+    <table th:attr="id=${tableId}" border="1" style="border-collapse: collapse">
+
+    </table>
+
+    <script type="text/javascript" th:inline="javascript" xmlns:th="http://www.w3.org/1999/xhtml">
+        /*<![CDATA[*/
+
+
+        console.log("tableFragment OK")
+
+        var tableId = [[${tableId}]];
+        var tableDatas = [[${tableDataList}]];
+        var tableData = getTable(tableId, tableDatas)
+        tableData.data.row = tableData.data.row
+        var tableDom = document.getElementById(tableId);
+
+
+        // 生成表格头
+        var tableHeader = tableData.data.header;
+
+        var currentNewRow = tableDom.insertRow();
+        var i = 0
+        for (var j in tableHeader) {
+            var cell = currentNewRow.insertCell(i++);
+            cell.innerText = tableHeader[j].name;
+        }
+
+
+        // 生成表格内容
+        var singleRow
+        for (var index in tableData.data.row) {
+            singleRow = tableData.data.row[index]
+            // 插入行值
+            var currentNewRow = tableDom.insertRow();
+            var ii = 0
+            for (var key in singleRow) {
+                var cell = currentNewRow.insertCell(ii++);
+                cell.innerText = JSON.stringify(singleRow[key])
+            }
+        }
+
+        function getTable(tableId, tableDatas) {
+            for (var index in tableDatas) {
+                var singleTableData = tableDatas[index]
+                if (singleTableData.tableId === tableId) {
+                    return singleTableData;
+                }
+            }
+        }
+
+
+        /*]]>*/
+    </script>
+</div>
+
+

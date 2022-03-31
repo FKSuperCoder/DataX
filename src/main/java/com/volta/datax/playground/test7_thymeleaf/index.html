@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>DataX Web GUI</title>
+    <link rel="stylesheet" type="text/css" th:href="@{/css/index.css}">
+    <link rel="stylesheet" type="text/css" th:href="@{/css/leftList.css}">
+    <link rel="stylesheet" type="text/css" th:href="@{/css/mainBoard.css}">
+    <link rel="stylesheet" type="text/css" th:href="@{/css/bottomInfos.css}">
+</head>
+<body>
+<div class="globalContainer">
+    <div th:replace="leftList.html"></div>
+    <div style="width: 100%;height:100%;display: flex;flex-direction: column">
+        <div th:replace="mainBoard.html"></div>
+        <div th:replace="bottomInfo.html"></div>
+    </div>
+
+</div>
+</body>
+</html>

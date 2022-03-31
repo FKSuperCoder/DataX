@@ -1,0 +1,13 @@
+html,body{
+    margin:0;
+    padding: 0;
+    height: 100%;
+}
+.globalContainer{
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+.padding5{
+    padding: 5px;
+}

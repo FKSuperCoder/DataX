@@ -1,0 +1,19 @@
+<div class="leftListContainer" th:fragment="leftList" xmlns:th="http://www.w3.org/1999/xhtml">
+    <div class="leftListHeader" >数据平台</div>
+    <div class="platformListContainer" >
+        <div class="platformListItem" th:each="e:${platformList}">
+            <div th:text="${e}"></div>
+        </div>
+    </div>
+
+</div>
+
+
+<script type="text/javascript" th:inline="javascript" xmlns:th="http://www.w3.org/1999/xhtml">
+    /*<![CDATA[*/
+
+    const platformList = /*[[${platformList}]]*/ null;
+
+
+    /*]]>*/
+</script>

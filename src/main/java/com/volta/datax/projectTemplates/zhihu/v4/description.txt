@@ -1,0 +1,24 @@
+v4修改要点
+    专注于爬取question页面
+        获取用户信息
+        获取用户提问内容
+    模型类
+        question
+        user
+
+v5修改要点
+    questionUrlsFile.json
+       keyword:""
+       questionUrls:[]
+    dataFile.json
+       [
+            Question
+       ]
+       相同标题的Question不再录入
+    将KeywordService和QuestionService抽象干净
+        除了数据库的方法动态调用
+        其余全部转换为静态
+    进度功能
+        采用控制台输出，循环每完成一个周期，就输出一次状态
+
+

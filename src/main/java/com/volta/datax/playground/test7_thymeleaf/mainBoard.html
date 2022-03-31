@@ -1,0 +1,17 @@
+<div class="mainBoardContainer" th:fragment="leftList" xmlns:th="http://www.w3.org/1999/xhtml">
+    <div class="mainBoardHeader">数据表格</div>
+    <div class="dataCtn">
+        <table border="1" style="width: 100%;border-collapse:collapse;margin-top: 1px">
+            <tr>
+                <th width="100px">用户名</th>
+                <th >内容</th>
+                <th width="400px">更新日期</th>
+            </tr>
+            <tr th:each="i :${#numbers.sequence(1,10)}" class="boardItem">
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+            </tr>
+        </table>
+    </div>
+</div>

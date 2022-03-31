@@ -1,0 +1,16 @@
+JPA自动生成表
+    ·
+        pom.xml 2项目
+        idea驱动 
+    jpa-hibernate-ddl-auto: update
+        validate 加载 Hibernate 时，验证创建数据库表结构
+        create 每次加载 Hibernate ，重新创建数据库表结构，这就是导致数据库表数据丢失的原因。
+        create-drop 加载 Hibernate 时创建，退出是删除表结构（退出是指退出sessionFactory）
+        update 加载 Hibernate 自动更新数据库结构
+        none 不启用
+
+MySQL
+    修改密码
+        set password for username @localhost = password(newpwd);
+
+        set password for root @localhost = password('123456');

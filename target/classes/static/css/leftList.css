@@ -1,0 +1,45 @@
+.leftListContainer {
+    /*background-color: yellow;*/
+    width: 170px;
+    min-width: 170px;
+    height: 100%;
+    min-height: 650px;
+    /*border: 1px solid black;*/
+    box-sizing: border-box;
+
+}
+
+.leftListHeader {
+    background-color: white;
+    width: 100%;
+    height: 30px;
+    min-height: 30px;
+    max-height: 30px;
+    padding: 2px;
+    font-size: 18px;
+    border-bottom: 1px solid black;
+
+    box-sizing: border-box; /*同样可以解决padding*/
+}
+
+
+.platformListContainer{
+    overflow-y: scroll !important;
+    display: flex;
+    flex-direction: column;
+    height: 96%;
+    box-sizing: border-box;
+    padding: 2px; /**/
+}
+
+
+.platformListItem{
+    font-size: 16px;
+    cursor: pointer;
+}
+.platformListItem:hover{
+    font-size: 16px;
+    background-color: yellow;
+    cursor: pointer;
+}
+

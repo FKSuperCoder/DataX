@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: httpunit:httpunit:1.5">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.m2/repository/httpunit/httpunit/1.5/httpunit-1.5.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.m2/repository/httpunit/httpunit/1.5/httpunit-1.5-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.m2/repository/httpunit/httpunit/1.5/httpunit-1.5-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

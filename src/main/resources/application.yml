@@ -28,20 +28,3 @@ spring:
     prefix: classpath:/webGUI/
     mode: HTML5
     encoding: UTF-8
-
-#  ├─src
-#  │  │  main.py
-#  │  │  res.jpg
-#  │  │
-#  │  ├─algorithm
-#  │  │      prediction.py
-#  │  │      resnet50_coco_best_v2.1.0.h5
-#  │  │
-#  │  ├─tkinter
-#  │  │      APP.py
-#  │  │
-#  │  └─utils
-#  │          camera.py
-#  │          hardware_utils.py
-#  │          junk_category_utils.py
-#  │          tkinter_utils.py
